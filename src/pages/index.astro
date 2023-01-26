@@ -2,6 +2,7 @@
 import "../assets/style/global.css";
 import Carousel from "../components/Carousel.astro";
 import Nav from "../components/Nav.astro";
+// import 'tw-elements';
 ---
 
 <html lang="en">
@@ -9,6 +10,10 @@ import Nav from "../components/Nav.astro";
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="stylesheet" href={Astro.resolve("../assets/style/global.css")}/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
@@ -20,7 +25,9 @@ import Nav from "../components/Nav.astro";
 		<main>
 			<section>
 			</section>
+      <div class="min-h-720">
         <Carousel title="Carousel-main"/>
+      </div>
 			<section>
 				<!--Announcements -->
 			</section>
@@ -40,6 +47,11 @@ import Nav from "../components/Nav.astro";
 			</section>
 		</main>
 		<footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 	</body>
 </html>
+
+
+
+
 
