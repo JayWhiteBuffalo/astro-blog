@@ -2,25 +2,26 @@
 import staticshock from "../assets/images/StaticShockSanctorum.png";
 import staticgraffti from "../assets/images/staticshockgraffitibanner.png";
 import staticanime from "../assets/images/ssanime1.png";
+import '../assets/style/global.css'
 ---
 
 <div id="carouselExampleControls" class=" bg-black py-4 carousel slide relative min-h-full" data-bs-ride="carousel">
-    <div class="carousel-inner relative container overflow-hidden ml-64 ">
-      <div class="carousel-item active relative float-left w-1/2">
+    <div class="carousel-inner relative container overflow-hidden" >
+      <div class="carousel-item active relative float-left">
         <img
           src={staticgraffti}
           class="block"
           alt="staticshock spray paint"
         />
       </div>
-      <div class="carousel-item relative float-left w-1/2">
+      <div class="carousel-item relative float-left">
         <img
           src={staticanime}
           class="block"
           alt="Camera"
         />
       </div>
-      <div class="carousel-item relative float-left w-1/2">
+      <div class="carousel-item relative float-left">
         <img
           src={staticshock}
           class="block"

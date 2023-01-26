@@ -1,0 +1,8 @@
+.carousel-item img{
+    filter: brightness(200%);
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+}
