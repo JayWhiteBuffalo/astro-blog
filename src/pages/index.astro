@@ -1,16 +1,45 @@
 ---
+import "../assets/style/global.css";
+import Carousel from "../components/Carousel.astro";
+import Nav from "../components/Nav.astro";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href={Astro.resolve("../assets/style/global.css")}/>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Spirit & Tech</h1>
-		<h1>A Blog for Spirit & Tech Lovers.</h1>
+		<header>
+      <Nav title="Nav"/>
+		</header>
+		<main>
+			<section>
+			</section>
+        <Carousel title="Carousel-main"/>
+			<section>
+				<!--Announcements -->
+			</section>
+			<section>
+				<!--Shop -->
+				<!--Sign up -->
+				<!--Trending -->
+			</section>
+			<section>
+				<!--Topics -->
+			</section>
+			<section>
+				<!--Blog Articles -->
+			</section>
+			<section>
+				<!--Affiliate Links (Books $ services) -->
+			</section>
+		</main>
+		<footer></footer>
 	</body>
 </html>
+
