@@ -1,5 +1,5 @@
 ---
-
+import avatar from '../assets/images/pharoh.jpg'
 ---
 
 <nav
@@ -32,7 +32,23 @@
       </svg>
     </button>
     <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent1">
-      <a class="text-xl text-white pr-2 font-semibold" href="#">Navbar</a>
+      <a href="#">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          data-icon="bars"
+          class="w-6 mr-12"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="currentColor"
+            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+          ></path>
+        </svg>
+      </a>
       <!-- Left links -->
       <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
         <li class="nav-item p-2">
@@ -143,7 +159,7 @@
           aria-expanded="false"
         >
           <img
-            src="https://mdbootstrap.com/img/new/avatars/2.jpg"
+            src={avatar}
             class="rounded-full"
             style="height: 25px; width: 25px"
             alt=""
