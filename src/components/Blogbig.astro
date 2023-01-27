@@ -1,12 +1,13 @@
 ---
+import image from '../assets/images/pharoh.jpg'
 import avatar from '../assets/images/pharoh.jpg'
 const {image} = Astro.props;
 ---
-<div>
-<a class="hover:translate-y-1 brightness-125 scale-125 ">
-    <div class="overflow-hidden rounded-md w-72 h-96 flex flex-col hover:brightness-125 hover:scale-105">
-        <div class="aspect-w-3 aspect-h-2 flex flex-col items-center">
-            <img class="h-48 w-full rounded" src={image} alt="Image post" loading="lazy">
+
+<a class="hover:translate-y-1 scale-150 mx-24 mt-24 ">
+    <div class="relative  rounded-md w-96 h-96 flex flex-col">
+        <div class="aspect-w-3 aspect-h-2 flex flex-col items-center hover:brightness-125 hover:scale-105">
+            <img class="h-auto max-h-48 w-full rounded" src={image} alt="Image post" loading="lazy">
         </div>
         <div class="px-3 pt-4 pb-6 my-1 text-gray-400">
             <h2 class="text-md font-semibold text-teal-400 "> LifeStyle</h2>
@@ -26,4 +27,3 @@ const {image} = Astro.props;
         </div>
     </div>
 </a>
-</div>
