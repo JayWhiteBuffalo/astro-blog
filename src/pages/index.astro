@@ -2,7 +2,7 @@
 import "../assets/style/global.css";
 import Carousel from "../components/Carousel.astro";
 import Nav from "../components/Nav.astro";
-// import 'tw-elements';
+import Blogcard from "../components/Blogcard.astro";
 ---
 
 <html lang="en">
@@ -17,14 +17,14 @@ import Nav from "../components/Nav.astro";
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body class="overflow-hidden">
-		<header class="w-screen">
+	<body>
+		<header class="w-full">
       <Nav title="Nav"/>
 		</header>
 		<main class="bg-black">
 			<section>
 			</section>
-      <div class="min-h-720 overflow-hidden">
+      <div class="min-h-720 mb-12 overflow-hidden">
         <Carousel title="Carousel-main"/>
       </div>
 			<section>
@@ -39,7 +39,15 @@ import Nav from "../components/Nav.astro";
 				<!--Topics -->
 			</section>
 			<section>
+				<div class="grid-cols-1 gap-16 md:grid-cols-3 w-full px-64 flex flex-wrap justify-center">
 				<!--Blog Articles -->
+				<Blogcard/>
+				<Blogcard/>
+				<Blogcard/>
+				<Blogcard/>
+				<Blogcard/>
+				<Blogcard/>
+			</div>
 			</section>
 			<section>
 				<!--Affiliate Links (Books $ services) -->

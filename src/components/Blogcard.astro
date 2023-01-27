@@ -1,0 +1,19 @@
+---
+import image from '../assets/images/pharoh.jpg'
+---
+<div>
+<a class="hover:translate-y-1 brightness-125 scale-125 ">
+    <div class="overflow-hidden rounded-md bg-slate-800 w-72 h-96 flex flex-col hover:brightness-125 hover:scale-105">
+        <div class="aspect-w-3 aspect-h-2 flex flex-col items-center">
+            <img class="h-48 w-full" src={image} alt="Image post" loading="lazy">
+        </div>
+        <div class="px-3 pt-4 pb-6 my-1 text-center text-gray-400">
+            <h2 class="text-xl font-semibold"> Blog Post 1</h2>
+            <div class="mt-1 text-xs"> Jan 26, 2023</div>
+            <div class="mt-2 text-sm">
+                "Built with astro and tailwind. Soon will add React and optimize SEO. Added feature for onsite blog post submission."
+            </div>
+        </div>
+    </div>
+</a>
+</div>
