@@ -1,17 +1,17 @@
 ---
 import avatar from '../assets/images/pharoh.jpg'
-const {image} = Astro.props;
+const {image, category, title, postlink} = Astro.props;
 ---
 <div>
-<a class="hover:translate-y-1 brightness-125 scale-125 ">
-    <div class="overflow-hidden rounded-md w-72 h-96 flex flex-col hover:brightness-125 hover:scale-105">
-        <div class="aspect-w-3 aspect-h-2 flex flex-col items-center">
-            <img class="h-48 w-full rounded" src={image} alt="Image post" loading="lazy">
+<a class="hover:translate-y-1 brightness-125 scale-125" href={postlink}>
+    <div class=" rounded-md w-80 h-96 flex flex-col">
+        <div class="aspect-w-3 aspect-h-2 flex flex-col items-center hover:brightness-125 hover:scale-105">
+            <img class="h-56 w-full rounded" src={image} alt="Image post" loading="lazy">
         </div>
         <div class="px-3 pt-4 pb-6 my-1 text-gray-400">
-            <h2 class="text-md font-semibold text-teal-400 "> LifeStyle</h2>
-            <div class="mt-2 text-xl font-bold">
-                Clickbait Title for the Article
+            <h2 class="text-md font-semibold ">{category}</h2>
+            <div class="mt-2 text-xl font-bold mb-4">
+                {title}
             </div>
             <div class="mt-1 text-xs flex flex-row justify-end items-end">
                 Jan 26, 2023
