@@ -3,10 +3,10 @@ import avatar from '../assets/images/pharoh.jpg'
 const {image, category, title, postlink} = Astro.props;
 ---
 <div>
-<a href={postlink} class="hover:translate-y-1 brightness-125 scale-125 ">
-    <div class="overflow-hidden rounded-md w-72 h-96 flex flex-col hover:brightness-125 hover:scale-105">
-        <div class="aspect-w-3 aspect-h-2 flex flex-col items-center">
-            <img class="h-48 w-full" src={image} alt="Image post" loading="lazy">
+<a href={postlink}>
+    <div class=" rounded w-full h-auto flex flex-col hover:brightness-125 hover:scale-105">
+        <div class="w-full flex flex-col items-center mb-8">
+            <img class="h-64 w-full scale-115 mx-16 rounded" src={image} alt="Image post" loading="lazy">
         </div>
         <div class="px-3 pt-4 pb-6 my-1 text-gray-400">
             <h2 class="text-md font-semibold text-teal-400 "> {category}</h2>
