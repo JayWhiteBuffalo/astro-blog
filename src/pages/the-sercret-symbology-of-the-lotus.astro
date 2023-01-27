@@ -1,0 +1,124 @@
+---
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import avatar from "../assets/images/pharoh.jpg";
+
+const category = "HERBS"
+const title= "The secret symbology of the lotus"
+const image= "https://cdn.discordapp.com/attachments/1065106875420520538/1068456215350366268/f3a3e112-b25c-4f2a-a905-01886a938963.jpg"
+const alt= "Blue Lotus"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href={Astro.resolve("../assets/style/global.css")}/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<header class="w-full">
+      <Nav title="Nav"/>
+		</header>
+		<main class="bg-black">
+			<section>
+
+<div class="container px-8 py-5 lg:py-8 mx-auto xl:px-5 max-2-screen-lg">
+    <div class="max-w-screen-md mx-auto">
+        <div class="text-center">
+            <span class="inline-block mt-5 text-xs font-medium tracking-wider uppercase text-emerald-700">{category}</span>
+        </div>
+        <h1 class="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4x1 text-white">{title}</h1>
+        <div class="flex justify-center mt-3 space-x3 text-gray-500">
+            <div class="flex items-center gap-3">
+                <div class="relative flex-shrink-0 w-10 h-10">
+                    <img alt="Avatar" class="rounded-full" width="80" height="80" src={avatar} loading="eager" decoding="async">
+                </div>
+                <div>
+                    <p class="text-white"><span class="text-blue">Jay</span> White</p>
+                    <div class="flex items-center space-x-2 text-sm">
+                        <time class="text-white" datetime="Thu Jan 27 2023 00:47:11 GMT+0000 (Coordinated Universal Time)">Jan 27, 2023</time>
+                        <span> - 5 min read </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="relative z-0 max-w-screen-lg mx-auto overflow-hidden lg:rounded-lg aspect-video">
+    <img src={image} loading="eager" decoding="async" alt={alt} class="w-full h-auto">
+</div>
+<div class="container px-8 py-5 lg:py-8 mx-auto xl:px-5 max-2-screen-lg">
+    <article class="max-w-screen-md mx-auto">
+        <div class="mx-auto my-3 text-white leading-loose">
+            <p class=" mb-6 text-center w-64 flex mx-auto">
+                <strong>
+                    The Lotus blooms in muddy water,
+                    Rising above the mire,
+                    A symbol of beauty, purity,
+                    And the spiritual fire.
+                </strong>
+            </p>
+            <p class=" mb-6">
+                The lotus is a symbol that has been revered for centuries in various cultures and traditions. Its unique ability to bloom in muddy waters and rise above the mire has made it a symbol of beauty, purity, and spiritual growth. The lotus has a rich history, and its symbology can be found in many cultures around the world.
+            </p>
+            <p class="imb-6">
+                In ancient Egyptian culture, the lotus was associated with the god, Nefertum, who represented the sun and creation. It was also associated with the goddess, Isis, who was seen as the mother of all things. The lotus was also believed to have medicinal properties and was often used in ancient Egyptian medicine.
+            </p>
+            <p class=" mb-6">
+                In Buddhism, the lotus is a powerful symbol of enlightenment. It is believed that the lotus blooms from the mud, which represents the human condition, and rises above the water to the surface, which represents enlightenment. The lotus is also believed to represent the potential for spiritual growth within every human being. In Buddhist art, the lotus is often depicted with the Buddha, who is seen as the embodiment of enlightenment.
+            </p>
+            <p class=" mb-6">
+                In Hinduism, the lotus is associated with the god, Brahma, who is considered the creator of the universe. The lotus is also associated with the god, Vishnu, who is believed to have emerged from the lotus and is considered the preserver of the universe. In Hindu art, the lotus is often depicted with the god, Vishnu, who is often depicted sitting or standing on a lotus.
+            </p>
+            <p class=" mb-6">
+                In Chinese culture, the lotus is a symbol of purity, spiritual awakening, and the ability to overcome difficulties. The lotus is also associated with the goddess, Guan Yin, who is considered the embodiment of compassion and is often depicted holding a lotus flower.
+            </p>
+            <p class=" mb-6">
+                In the ancient Greece the lotus was also a symbol of the human soul and its ability to transcend the physical world. The Greek philosopher, Plato, believed that the lotus represented the soul's ability to detach from the physical body and reach a higher state of consciousness.
+            </p>
+            <p class=" mb-6">
+                In many cultures, the lotus is also often used as a symbol of rebirth and regeneration. It's seen as a reminder that even in the darkest and most challenging of situations, it's possible to rise above and find beauty and growth.
+            </p>
+            <p class=" mb-6">
+                In modern culture, the lotus has been used as a symbol of strength and resilience by notable figures like Nelson Mandela, who wrote in his book "Long Walk to Freedom" "I learned that courage was not the absence of fear, but the triumph over it. I felt fear myself more times than I can remember, but I hid it behind a mask of boldness. The brave man is not he who does not feel afraid, but he who conquers that fear."
+            </p>
+            <p class=" mb-6">
+                In conclusion, the lotus is a powerful symbol that has been revered for centuries in various cultures and traditions. Its unique ability to bloom in muddy waters and rise above the mire has made it a symbol of beauty, purity, and spiritual growth. It represents the potential for spiritual growth within every human being, and the ability to transcend the physical world. It's a reminder that even in the darkest of situations, it's possible to rise above, find beauty, and to grow. The lotus is a symbol that has been used by many cultures and notable figures to represent strength, resilience, and the ability to overcome difficulties.
+            </p>
+            <div class="flex flex-wrap items-center w-full gap-3 md:w-auto">
+                <span class="text-sm text-gray-500">#lotus</span>
+                <span class="text-sm text-gray-500">#herbs</span>
+                <span class="text-sm text-gray-500">#culture</span>
+            </div>
+        </div>
+    <div class="flex justify-center mt-7 mb-7">
+        <a href="/astro-blog/" class="px-5 py-3 text-sm text-blue transition rounded-md bg-white hover:bg-blue-100">View all posts</a>
+    </div>
+    <div class="px-8 py-8 mt-3 text-gray-500 rounded-2x1 bg-slate-800">
+        <div class="flex flex-wrap items-start gap-3 sm:flex-nowrap sm:gap-6">
+            <div class="relative flex-shrink-0 w-24 h-24 mt-1">
+                <img alt="Author Photo" class="rounded-full" width="96" height="96" src={avatar} loading="eager" decoding="async">
+            </div>
+            <div>
+                <p class="text-lg font-medium text-white text-center">About Jay White</p>
+            </div>
+            <div class="mt-3">
+                <p>Jay White is a Certified Web Developer and Software Engineer.</p>
+            </div>
+        </div>
+    </div>
+    </article>
+</div>
+			</section>
+        </main>
+        <footer>
+           <Footer/>
+        </footer>
+    </body>
+</html>
