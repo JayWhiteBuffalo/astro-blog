@@ -2,6 +2,7 @@
 import "../assets/style/global.css";
 import Carousel from "../components/Carousel.astro";
 import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
 import Blogcard from "../components/Blogcard.astro";
 ---
 
@@ -39,7 +40,7 @@ import Blogcard from "../components/Blogcard.astro";
 				<!--Topics -->
 			</section>
 			<section>
-				<div class="grid-cols-1 gap-16 md:grid-cols-3 w-full px-64 flex flex-wrap justify-center">
+				<div class="grid-cols-1 gap-16 md:grid-cols-3 w-full px-64 pb-12 flex flex-wrap justify-center">
 				<!--Blog Articles -->
 				<Blogcard/>
 				<Blogcard/>
@@ -53,7 +54,9 @@ import Blogcard from "../components/Blogcard.astro";
 				<!--Affiliate Links (Books $ services) -->
 			</section>
 		</main>
-		<footer></footer>
+		<footer>
+			<Footer/>
+		</footer>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 	</body>
 </html>
