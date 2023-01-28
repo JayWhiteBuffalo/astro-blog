@@ -1,7 +1,8 @@
 ---
 import Nav from "../components/Nav.astro";
-// import Footer from "../components/Footer.astro";
+import Foot from "../components/Foot.astro";
 import avatar from "../assets/images/pharoh.jpg";
+import Authorbio from "../components/Authorbio.astro";
 
 const category = "PERSONAL"
 const title= "Tattoos. A innocent form of self-expression or more?"
@@ -94,23 +95,11 @@ const alt= "Heavily tattoo'd mystic. Pronouns she/her"
     <div class="flex justify-center mt-7 mb-7">
         <a href="/astro-blog/" class="px-5 py-3 text-sm text-blue transition rounded-md bg-white hover:bg-blue-100">View all posts</a>
     </div>
-    <div class="px-8 py-8 mt-3 text-gray-500 rounded-2x1 bg-slate-800">
-        <div class="flex flex-wrap items-start gap-3 sm:flex-nowrap sm:gap-6">
-            <div class="relative flex-shrink-0 w-24 h-24 mt-1">
-                <img alt="Author Photo" class="rounded-full" width="96" height="96" src={avatar} loading="eager" decoding="async">
-            </div>
-            <div>
-                <p class="text-lg font-medium text-white text-center">About Jay White</p>
-            </div>
-            <div class="mt-3">
-                <p>Jay White is a Certified Web Developer and Software Engineer.</p>
-            </div>
-        </div>
-    </div>
+    <Authorbio/>
     </article>
 </div>
 			</section>
         </main>
-           <!-- <Footer/> -->
+        <Foot/>
     </body>
 </html>

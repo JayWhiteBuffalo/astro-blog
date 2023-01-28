@@ -2,9 +2,9 @@
 import "../assets/style/global.css"; 
 import Carousel from "../components/Carousel.astro";
 import Nav from "../components/Nav.astro";
-// import Footer from "../components/Footer.astro";
 import Bigcard from "../components/Bigcard.astro";
 import Blogcard from "../components/Blogcard.astro";
+import Foot from "../components/Foot.astro";
 ---
 
 <html lang="en">
@@ -26,7 +26,7 @@ import Blogcard from "../components/Blogcard.astro";
 		<main class="bg-black">
 			<section>
 			</section>
-      <div class="min-h-720 mb-12 overflow-hidden">
+      <div class="min-h-720 pt-6 overflow-hidden">
         <Carousel title="Carousel-main"/>
       </div>
 			<section>
@@ -41,7 +41,10 @@ import Blogcard from "../components/Blogcard.astro";
 				<!--Topics -->
 			</section>
 			<section>
-				<div  class="container px-10 py-5 mx-auto max-w-screen-lg my-8">
+				<div  class="container px-10 mx-auto max-w-screen-lg">
+					<div>
+						<h2 class="w-full text-center mb-12 mt-6 py-12 font-bold text-3xl text-white border-y-2 border-blue-700 tracking-widest ">Featured Articles</h2>
+					</div>
 					<div class="grid-cols-1 gap-10 lg:gap-10 md:grid-cols-2 w-full flex justify-center">
 						<Bigcard 
 							postlink="/astro-blog/how-walking-in-nature-can-lead-to-self-actualization/" 
@@ -92,6 +95,7 @@ import Blogcard from "../components/Blogcard.astro";
 			<section>
 				<!--Affiliate Links (Books $ services) -->
 			</section>
+			<Foot/>
 		</main>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 	</body>
