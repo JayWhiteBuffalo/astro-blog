@@ -5,6 +5,7 @@ category: "TECH"
 avatar: "https://cdn.discordapp.com/attachments/1065105738025930792/1070325309095821312/71d9d6f3-0832-42ad-8097-8692133a0571.jpg"
 pubDate: 2023-01-02
 author: 'Jay White'
+readtime: "5 mintues"
 image:
     url: "https://cdn.discordapp.com/attachments/1067564605389406249/1068391442814341170/dfc6a96a-6b23-4c87-bcdb-e59d5368761f.jpg"
     alt: "A.I generated 3d model"
