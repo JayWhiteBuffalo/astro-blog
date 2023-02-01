@@ -1,0 +1,92 @@
+---
+import "../assets/style/global.css"; 
+import Carousel from "../components/Carousel.astro";
+import Nav from "../components/Nav.astro";
+import Bigcard from "../components/Bigcard.astro";
+import Blogcard from "../components/Blogcard.astro";
+import Foot from "../components/Foot.astro";
+
+---
+	<body>
+		<main class="bg-black">
+			<section>
+			</section>
+      <div class="min-h-720 pt-6 overflow-hidden">
+        <Carousel title="Carousel-main"/>
+      </div>
+			<section>
+				<!--Announcements -->
+			</section>
+			<section>
+				<!--Shop -->
+				<!--Sign up -->
+				<!--Trending -->
+			</section>
+			<section>
+				<!--Topics -->
+			</section>
+			<section>
+				<div  class="container px-10 mx-auto max-w-screen-lg">
+					<div>
+						<h2 class="w-full text-center mb-12 mt-6 py-12 font-bold text-3xl text-white border-y-2 border-blue-700 tracking-widest ">Featured Articles</h2>
+					</div>
+					<div class="grid-cols-1 gap-10 lg:gap-10 md:grid-cols-2 w-full flex justify-center">
+						<Bigcard 
+							postlink="/astro-blog/posts/how-walking-in-nature-can-lead-to-self-actualization/" 
+							category="TRAVEL" title="How walking in nature can lead to self-actualization." 
+							image="https://cdn.discordapp.com/attachments/1065106875420520538/1068399100757803039/183d7065-f12f-42b9-8c9b-c71b8a29e6a9.jpg"
+						 />
+						<Bigcard 
+							postlink="/astro-blog/posts/tattoos-a-innocent-form-of-self-expression-or-more/" 
+							category="PERSONAL" title="Tattoos. A innocent form of self-expression or more?"
+							image="https://cdn.discordapp.com/attachments/1067564605389406249/1068391799846097007/1bd751f5-d0f6-4e64-a5c1-90ff5b9b9461.jpg"
+						/>
+					</div>
+				</div>
+				<div class="grid-cols-1 gap-10 md:grid-cols-3 w-full px-24 mx-auto pb-8 flex flex-wrap justify-center">
+				<!--Blog Articles -->
+				<Blogcard 
+					postlink="/astro-blog/posts/is-there-life-on-mars/" 
+					category="CONSPIRACY" title="Is there life on Mars? The answer will shock you" 
+					image="https://cdn.discordapp.com/attachments/1067564605389406249/1068390893276631140/2a444adc-c919-405e-b504-8b1a74211fae.jpg"
+				/>
+				<Blogcard 
+					postlink="/astro-blog/posts/the-nft-market-dead-or-alive/" 
+					category="Web3" title="The NFT market: Dead or Alive?" 
+					image="https://cdn.discordapp.com/attachments/1065105606878429325/1068371044508897300/46841767-c28f-4eb6-ad24-bc5446ef7bc0.jpg"
+				/>
+				<Blogcard 
+					postlink="/astro-blog/posts/how-ai-image-generation-has-hacked-humanity/"
+					category="TECH" title="How A.I. image generation has hacked humanity" 
+					image="https://cdn.discordapp.com/attachments/1067564605389406249/1068391442814341170/dfc6a96a-6b23-4c87-bcdb-e59d5368761f.jpg"
+				 />
+				<Blogcard 
+					postlink="/astro-blog/posts/these-5-cities-are-home-to-the-most-magical-places-on-earth/" 
+					category="TRAVEL" title="These 5 cities are home to the most magical places on earth" 
+					image="https://cdn.discordapp.com/attachments/1065105542223237131/1068391324195237978/9b5251e8-d55f-4f12-ba8d-c0458539cbcd.jpg"
+				/>
+				<Blogcard 
+					postlink="/astro-blog/posts/the-sercret-symbology-of-the-lotus/" 
+					category="HERBS" title="The secret symbology of the lotus " 
+					image="https://cdn.discordapp.com/attachments/1065106875420520538/1068456215350366268/f3a3e112-b25c-4f2a-a905-01886a938963.jpg"
+				/>
+				<Blogcard 
+					postlink="/astro-blog/posts/this-ceremony-will-purify-your-body-and-spirit/" 
+					category="SPIRIT" title="This ceremony will purify your body and spirit"
+					image="https://cdn.discordapp.com/attachments/1067564605389406249/1068391680555888670/729e347e-7b55-496b-8011-c130eee56d22.jpg"
+				/>
+			</div>
+			</section>
+			<section>
+				<!--Affiliate Links (Books $ services) -->
+			</section>
+			<Foot/>
+		</main>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+	</body>
+
+
+
+
+
+
