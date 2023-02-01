@@ -1,8 +1,7 @@
 ---
 import Nav from "../components/Nav.astro";
-// import Footer from "../components/Footer.astro";
-import BlogPost from "../components/posttemplate.astro";
-import avatar from "../assets/images/pharoh.jpg";
+import Foot from "../components/Foot.astro";
+
 ---
 
 <html lang="en">
@@ -15,17 +14,17 @@ import avatar from "../assets/images/pharoh.jpg";
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Jay White's Blog</title>
 	</head>
-	<body>
+	<body >
 		<header class="w-full">
       <Nav title="Nav"/>
 		</header>
 		<main class="bg-black">
 			<section>
-				<BlogPost avatar={avatar} category="TRAVEL" title="How walking in nature can lead to self-actualization." image="https://cdn.discordapp.com/attachments/1065106875420520538/1068399100757803039/183d7065-f12f-42b9-8c9b-c71b8a29e6a9.jpg"/>
-			</section>
+                <slot/>
+            </section>
         </main>
-           <!-- <Footer/> -->
+        <Foot/>
     </body>
 </html>

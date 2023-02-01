@@ -1,0 +1,82 @@
+---
+import Authorbio from "../components/Authorbio.astro";
+import BasePageLayout from "./BasePageLayout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<BasePageLayout>
+<div class="container px-8 py-5 lg:py-8 mx-auto xl:px-5 max-2-screen-lg">
+    <div class="max-w-screen-md mx-auto">
+        <div class="text-center">
+            <span class="inline-block mt-5 text-xs font-medium tracking-wider uppercase text-emerald-700">{frontmatter.category}</span>
+        </div>
+        <h1 class="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4x1 text-white">{frontmatter.title}</h1>
+        <div class="flex justify-center mt-3 space-x3 text-gray-500">
+            <div class="flex items-center gap-3">
+                <div class="relative flex-shrink-0 w-10 h-10">
+                    <img alt="Avatar" class="rounded-full" width="80" height="80" src={frontmatter.avatar} loading="eager" decoding="async">
+                </div>
+                <div>
+                    <p class="text-white">{frontmatter.author}</p>
+                    <div class="flex items-center space-x-2 text-sm">
+                        <time class="text-white" datetime="Thu Jan 27 2023 00:47:11 GMT+0000 (Coordinated Universal Time)">{frontmatter.pubDate.slice(0,10)}</time>
+                        <span> - {frontmatter.readtime} </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="relative z-0 max-w-screen-lg mx-auto overflow-hidden lg:rounded-lg aspect-video">
+    <img src={frontmatter.image.url} loading="eager" decoding="async" alt={frontmatter.image.alt} class="w-full h-auto">
+</div>
+<div class="container px-8 py-5 lg:py-8 mx-auto xl:px-5 max-2-screen-lg">
+    <article class="max-w-screen-md mx-auto">
+        <div class="mx-auto my-3 text-white leading-loose">
+            <p class=" mb-6 w-full mx-auto">
+                <strong>
+                    {frontmatter.intro}
+                </strong>
+            </p>
+            <p class=" mb-6">
+                {frontmatter.p1}
+            </p>
+            <p class="imb-6">
+                {frontmatter.p2}
+            </p>
+            <br/>
+            <p class=" mb-6">
+                {frontmatter.p3}
+            </p>
+            <p class=" mb-6">
+                {frontmatter.p4}
+            </p>
+            <p class=" mb-6">
+                {frontmatter.p5}
+            </p>
+            <p class=" mb-6">
+                {frontmatter.p6}
+            </p>
+            <p class=" mb-6">
+                {frontmatter.p7}
+            </p>
+            <p class=" mb-6">
+                {frontmatter.p8}
+            </p>
+            <p class=" mb-6">
+                {frontmatter.p9}
+            </p>
+            <div class="flex flex-wrap items-center w-full gap-3 md:w-auto">
+                <span class="text-sm text-gray-500">#{frontmatter.tags[0]}</span>
+                <span class="text-sm text-gray-500">#{frontmatter.tags[1]}</span>
+                <span class="text-sm text-gray-500">#{frontmatter.tags[2]}</span>
+            </div>
+        </div>
+    <div class="flex justify-center mt-7 mb-7">
+        <a href="/astro-blog/" class="px-5 py-3 text-sm text-blue transition rounded-md bg-white hover:bg-blue-100">View all posts</a>
+    </div>
+    <Authorbio/>
+    </article>
+</div>
+</BasePageLayout>
+

@@ -1,0 +1,165 @@
+---
+import avatar from "../assets/images/pharoh.jpg";
+import Authorbio from "../components/Authorbio.astro";
+import BasePageLayout from "./BasePageLayout.astro";
+const { frontmatter } = Astro.props;
+
+---
+<BasePageLayout>
+<div class="container py-5 lg:py-8 mx-auto xl:px-5 max-2-screen-lg">
+    <div class="max-w-screen-md mx-auto">
+        <div class="text-center">
+            <span class="inline-block mt-5 text-xs font-medium tracking-wider uppercase text-emerald-700">{frontmatter.category}</span>
+        </div>
+        <h1 class="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4x1 text-white">{frontmatter.title}</h1>
+        <div class="flex justify-center mt-3 space-x3 text-gray-500">
+            <div class="flex items-center gap-3">
+                <div class="relative flex-shrink-0 w-10 h-10">
+                    <img alt="Avatar" class="rounded-full" width="80" height="80" src={frontmatter.avatar} loading="eager" decoding="async">
+                </div>
+                <div>
+                    <p class="text-white">{frontmatter.author}</p>
+                    <div class="flex items-center space-x-2 text-sm">
+                        <time class="text-white" datetime="Thu Jan 27 2023 00:47:11 GMT+0000 (Coordinated Universal Time)">{frontmatter.pubDate}</time>
+                        <span>{frontmatter.readTime}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+<div class="relative z-0 max-w-screen-lg mx-auto overflow-hidden lg:rounded-lg aspect-video mb-12">
+    <img src={frontmatter.image.url} loading="eager" decoding="async" alt={frontmatter.image.alt} class="w-full h-auto">
+</div>
+<article class="w-screen p-32 mx-auto">
+<section class="mb-16 text-gray-800 w-full">
+    <ol class="m-1">
+        <!-- First Item -->
+        <li>
+            <div class="flex flex-wrap md:flex-row mb-12">
+                <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
+                    <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg h-96"
+                    style="background-position: 50%" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                    <img src={frontmatter.item1.image.url} width="w-full" class="m-auto" alt={frontmatter.item1.image.alt} />
+                        <div
+                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0"
+                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                    </div>
+                </div>
+                <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6 m-auto">
+                    <div class="text-red-600 text-3xl mb-4 flex items-center font-medium justify-center">
+                    {frontmatter.item1.heading}
+                    </div>
+                    <p class="text-gray-500">
+                        {frontmatter.item1.p1}
+                    </p>
+                </div>
+            </div>
+        </li>
+        <!-- Second Item -->
+        <li>
+            <div class="flex flex-wrap lg:flex-row-reverse mb-12">
+                <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6 mb-6 lg:mb-0">
+                    <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg h-96"
+                    style="background-position: 50%" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                    <img src={frontmatter.item2.image.url} width="w-full" class="m-auto" alt={frontmatter.item2.image.alt} />
+                        <div
+                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                    </div>
+                </div>
+
+                <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 m-auto">
+                    <div class="text-blue-600 text-sm mb-4 flex items-center font-medium justify-center">
+                        <h3 class="text-2xl font-bold mb-4">{frontmatter.item2.heading}</h3>
+                    </div>
+                    <p class="text-gray-500">
+                    {frontmatter.item2.p1}
+                    </p>
+                </div>
+            </div>
+        </li>
+        <!-- Third Item -->
+    <li>
+        <div class="flex flex-wrap mb-12">
+            <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg h-96"
+                style="background-position: 50%" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                <img src={frontmatter.item3.image.url} class="w-full" alt={frontmatter.item3.image.alt} />
+                </div>
+            </div>
+
+            <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6 m-auto">
+                <div class="text-yellow-600 text-sm mb-4 flex items-center font-medium justify-center">
+                    <h3 class="text-2xl font-bold mb-4">{frontmatter.item3.heading}</h3>
+                </div>
+                <p class="text-gray-500">
+                    {frontmatter.item3.p1}
+                </p>
+            </div>
+        </div>
+    </li>
+    <!-- Forth Item -->
+    <li>
+        <div class="flex flex-wrap lg:flex-row-reverse mb-12">
+            <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6 mb-6 lg:mb-0">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg h-96"
+                    style="background-position: 50%" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                    <img src={frontmatter.item4.image.url} class="w-full" alt={frontmatter.item4.image.alt} />
+                    <div
+                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                        style="background-color: rgba(251, 251, 251, 0.2)">
+                    </div>
+                </div>
+            </div>
+            <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 m-auto">
+                <div class="text-blue-600 text-sm mb-4 flex items-center font-medium justify-center">
+                    <h3 class="text-2xl font-bold mb-4">{frontmatter.item4.heading}</h3>
+                </div>
+                <p class="text-gray-500">
+                    {frontmatter.item4.p1}
+                </p>
+            </div>
+        </div>
+    </li>
+    <!-- Fifth Item -->
+    <li>
+      <div class="flex flex-wrap mb-12">
+        <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
+          <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg h-96"
+            style="background-position: 50%" data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img src={frontmatter.item5.image.url} class="w-full" alt={frontmatter.item5.image.alt} />
+          </div>
+        </div>
+        <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6 m-auto">
+          <div class="text-yellow-600 text-sm mb-4 flex items-center font-medium justify-center">
+              <h3 class="text-2xl font-bold mb-4">{frontmatter.item5.heading}</h3>
+          </div>
+          <p class="text-gray-500">
+              {frontmatter.item5.p1}
+           </p>
+         </div>
+       </div>
+    </li>
+    </ol>
+    <div class = "max-w-screen-md mx-auto my-3 text-white leading-loose mb-6">
+       <p class="">
+        {frontmatter.outro}
+    </p>
+    <div class="flex flex-wrap items-center w-full gap-3 md:w-auto m-4">
+        <span class="text-sm text-gray-500">#{frontmatter.tags[0]}</span>
+        <span class="text-sm text-gray-500">#{frontmatter.tags[1]}</span>
+        <span class="text-sm text-gray-500">#{frontmatter.tags[2]}</span>
+    </div>
+    </div>
+  </section>
+  <div class="flex justify-center mt-7 mb-7">
+    <a href="/astro-blog/" class="px-5 py-3 text-sm text-blue transition rounded-md bg-white hover:bg-blue-100">View all posts</a>
+</div>
+    <div class="max-w-screen-md mx-auto">
+        <Authorbio/>
+    </div>
+</article>
+</div>
+</BasePageLayout>
